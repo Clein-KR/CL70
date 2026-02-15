@@ -1,0 +1,147 @@
+{
+    "manufacturer": "Clein",
+    "keyboard_name": "clein/cl70/for_education",
+    "maintainer": "Clein",
+    "bootloader": "atmel-dfu",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "rgblight": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
+    "matrix_pins": {
+        "cols": ["F6", "F7", "C7", "C6", "B6", "B5", "B4", "D7", "D6"],
+        "rows": ["B0", "F0", "F1", "B1", "F4", "F5", "D4", "D0", "D5", "D3"]
+    },
+    "processor": "atmega32u4",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0xC170",
+        "vid": "0xC137"
+    },
+    "ws2812": {
+        "pin": "B3"
+    },
+    "rgblight": {
+        "saturation_steps": 8,
+        "brightness_steps": 8,
+        "led_count": 20,
+        "max_brightness": 200,
+        "sleep": true,
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
+        }
+    },
+    "indicators": {
+        "caps_lock": "B2",
+        "scroll_lock": "E6",
+        "on_state": 1
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "Esc", "matrix": [0, 0], "x": 0, "y": 0},
+
+                {"label": "`", "matrix": [1, 1], "x": 1.25, "y": 0},
+                {"label": "1", "matrix": [0, 1], "x": 2.25, "y": 0},
+                {"label": "2", "matrix": [1, 2], "x": 3.25, "y": 0},
+                {"label": "3", "matrix": [0, 2], "x": 4.25, "y": 0},
+                {"label": "4", "matrix": [1, 3], "x": 5.25, "y": 0},
+                {"label": "5", "matrix": [0, 3], "x": 6.25, "y": 0},
+                {"label": "6", "matrix": [1, 4], "x": 7.25, "y": 0},
+                {"label": "7", "matrix": [0, 4], "x": 8.25, "y": 0},
+                {"label": "8", "matrix": [1, 5], "x": 9.25, "y": 0},
+                {"label": "9", "matrix": [0, 5], "x": 10.25, "y": 0},
+                {"label": "0", "matrix": [1, 6], "x": 11.25, "y": 0},
+                {"label": "-", "matrix": [0, 6], "x": 12.25, "y": 0},
+                {"label": "=", "matrix": [1, 7], "x": 13.25, "y": 0},
+                {"label": "\\", "matrix": [0, 7], "x": 14.25, "y": 0},
+                {"label": "Delete", "matrix": [1, 8], "x": 15.25, "y": 0},
+
+                {"label": "Home", "matrix": [0, 8], "x": 16.5, "y": 0},
+
+                {"label": "PgUp", "matrix": [2, 0], "x": 0, "y": 1.25},
+
+                {"label": "Tab", "matrix": [3, 1], "x": 1.25, "y": 1, "w": 1.5},
+                {"label": "q", "matrix": [2, 1], "x": 2.75, "y": 1},
+                {"label": "w", "matrix": [3, 2], "x": 3.75, "y": 1},
+                {"label": "e", "matrix": [2, 2], "x": 4.75, "y": 1},
+                {"label": "r", "matrix": [3, 3], "x": 5.75, "y": 1},
+                {"label": "t", "matrix": [2, 3], "x": 6.75, "y": 1},
+                {"label": "y", "matrix": [3, 4], "x": 7.75, "y": 1},
+                {"label": "u", "matrix": [2, 4], "x": 8.75, "y": 1},
+                {"label": "i", "matrix": [3, 5], "x": 9.75, "y": 1},
+                {"label": "o", "matrix": [2, 5], "x": 10.75, "y": 1},
+                {"label": "p", "matrix": [3, 6], "x": 11.75, "y": 1},
+                {"label": "[", "matrix": [2, 6], "x": 12.75, "y": 1},
+                {"label": "]", "matrix": [3, 7], "x": 13.75, "y": 1},
+                {"label": "Backspace", "matrix": [2, 8], "x": 14.75, "y": 1, "w": 1.5},
+
+                {"label": "End", "matrix": [3, 8], "x": 16.5, "y": 1},
+
+                {"label": "PgDn", "matrix": [4, 0], "x": 0, "y": 2.25},
+
+                {"label": "Control", "matrix": [5, 1], "x": 1.25, "y": 2, "w": 1.75},
+                {"label": "a", "matrix": [4, 1], "x": 3, "y": 2},
+                {"label": "s", "matrix": [5, 2], "x": 4, "y": 2},
+                {"label": "d", "matrix": [4, 2], "x": 5, "y": 2},
+                {"label": "f", "matrix": [5, 3], "x": 6, "y": 2},
+                {"label": "g", "matrix": [4, 3], "x": 7, "y": 2},
+                {"label": "h", "matrix": [5, 4], "x": 8, "y": 2},
+                {"label": "j", "matrix": [4, 4], "x": 9, "y": 2},
+                {"label": "k", "matrix": [5, 5], "x": 10, "y": 2},
+                {"label": "l", "matrix": [4, 5], "x": 11, "y": 2},
+                {"label": ";", "matrix": [5, 6], "x": 12, "y": 2},
+                {"label": "'", "matrix": [4, 6], "x": 13, "y": 2},
+                {"label": "Enter", "matrix": [5, 7], "x": 14, "y": 2, "w": 2.25},
+
+                {"label": "Shift", "matrix": [6, 1], "x": 1.25, "y": 3, "w": 2.25},
+                {"label": "z", "matrix": [7, 2], "x": 3.5, "y": 3},
+                {"label": "x", "matrix": [6, 2], "x": 4.5, "y": 3},
+                {"label": "c", "matrix": [7, 3], "x": 5.5, "y": 3},
+                {"label": "v", "matrix": [6, 3], "x": 6.5, "y": 3},
+                {"label": "b", "matrix": [7, 4], "x": 7.5, "y": 3},
+                {"label": "n", "matrix": [6, 4], "x": 8.5, "y": 3},
+                {"label": "m", "matrix": [7, 5], "x": 9.5, "y": 3},
+                {"label": ",", "matrix": [6, 5], "x": 10.5, "y": 3},
+                {"label": ".", "matrix": [7, 6], "x": 11.5, "y": 3},
+                {"label": "/", "matrix": [6, 6], "x": 12.5, "y": 3},
+                {"label": "Shift", "matrix": [7, 7], "x": 13.5, "y": 3, "w": 2},
+                {"label": "Up", "matrix": [6, 8], "x": 15.5, "y": 3},
+
+                {"label": "Knob", "matrix": [7, 8], "x": 16.75, "y": 2.5},
+
+                {"label": "Fn", "matrix": [8, 1], "x": 1.25, "y": 4, "w": 1.25},
+                {"label": "GUI", "matrix": [9, 1], "x": 2.5, "y": 4, "w": 1.25},
+                {"label": "Alt", "matrix": [8, 2], "x": 3.75, "y": 4, "w": 1.5},
+                {"label": "Space", "matrix": [9, 3], "x": 5.25, "y": 4, "w": 3},
+                {"label": "SpaceFn", "matrix": [8, 4], "x": 8.25, "y": 4, "w": 3},
+                {"label": "Alt", "matrix": [9, 5], "x": 11.25, "y": 4, "w": 1.5},
+                {"label": "Ctrl", "matrix": [8, 6], "x": 12.75, "y": 4, "w": 1.25},
+
+                {"label": "Left", "matrix": [9, 7], "x": 14.5, "y": 4},
+                {"label": "Down", "matrix": [8, 8], "x": 15.5, "y": 4},
+                {"label": "Right", "matrix": [9, 8], "x": 16.5, "y": 4}
+            ]
+        }
+    }
+}
